@@ -2,6 +2,8 @@ import Link from 'next/link';
 import React from 'react';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import BackgroundCircles from './BackgroundCircles';
+import Image from 'next/image';
+import profileImage from '../public/marwan.png';
 
 type Props = {};
 
@@ -19,10 +21,10 @@ const Hero = (props: Props) => {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
-      <img
+      <Image
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        src="./marwan.png"
-        alt="img"
+        src={profileImage}
+        alt="Picture of the author"
       />
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
