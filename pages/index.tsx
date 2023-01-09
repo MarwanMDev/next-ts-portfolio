@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { Inter } from '@next/font/google';
 import styles from '../styles/Home.module.css';
+import Header from '../components/Header';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -11,7 +12,7 @@ export default function Home() {
         <title>Marwan Mostafa | Portfolio</title>
       </Head>
       {/* Header */}
-
+      <Header />
       {/* Hero */}
 
       {/* About */}
@@ -21,9 +22,6 @@ export default function Home() {
       {/* Skills */}
 
       {/* Projects */}
-      <main>
-        <h1>New Website</h1>
-      </main>
     </>
   );
 }
