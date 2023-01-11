@@ -21,21 +21,19 @@ const Skills = (props: Props) => {
       </h3>
 
       <div className="grid grid-cols-4 gap-5">
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
+        <Skill directionLeft={true} />
+        <Skill directionLeft={true} />
+        <Skill directionLeft={true} />
+        <Skill directionLeft={true} />
+        <Skill directionLeft={true} />
+        <Skill directionLeft={true} />
+        <Skill directionLeft={true} />
+        <Skill directionLeft={false} />
+        <Skill directionLeft={false} />
+        <Skill directionLeft={false} />
+        <Skill directionLeft={false} />
+        <Skill directionLeft={false} />
+        <Skill directionLeft={false} />
       </div>
     </motion.div>
   );
