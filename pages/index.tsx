@@ -10,7 +10,7 @@ import ContactMe from '../components/ContactMe';
 
 export default function Home() {
   return (
-    <div className="bg-[#212121] text-white h-screen snap-y snap-mandatory overflow-scroll z-0">
+    <div className="bg-[#212121] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#FF0266]/80">
       <Head>
         <title>Marwan Mostafa | Portfolio</title>
       </Head>
@@ -39,6 +39,16 @@ export default function Home() {
       <section id="contact" className="snap-start">
         <ContactMe />
       </section>
+
+      <footer className="sticky bottom-5 w-full cursor-pointer">
+        <div className="flex items-center justify-center">
+          <img
+            src="marwan.png"
+            alt="profile"
+            className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
+          />
+        </div>
+      </footer>
     </div>
   );
 }
