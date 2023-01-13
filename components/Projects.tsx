@@ -1,10 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Project } from '../typings';
+import { urlFor } from '../sanity';
 
-type Props = {};
+type Props = {
+  projects: Project[];
+};
 
-const Projects = (props: Props) => {
-  const projects = [1, 2, 3, 4, 5];
+const Projects = ({ projects }: Props) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -17,9 +20,9 @@ const Projects = (props: Props) => {
       </h3>
 
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#FF0266]/80">
-        {projects.map((project, i) => (
+        {projects?.map((project, i) => (
           <div
-            key={i}
+            key={project?._id}
             className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen"
           >
             <motion.img
@@ -35,21 +38,11 @@ const Projects = (props: Props) => {
                 <span className="underline decoration-[#FF0266]/50">
                   App {i + 1} of {projects.length}:
                 </span>{' '}
-                Taking Notes App
+                {project?.title}
               </h4>
 
               <p className="text-lg text-center md:text-left">
-                Bacon ipsum dolor amet swine chislic short ribs
-                turducken. Leberkas jowl burgdoggen turducken,
-                meatball short ribs ball tip. Kielbasa doner leberkas
-                spare ribs ball tip sirloin flank tongue, brisket
-                burgdoggen. Ham pork chop strip steak shoulder brisket
-                cow bacon.Bacon ipsum dolor amet swine chislic short
-                ribs turducken. Leberkas jowl burgdoggen turducken,
-                meatball short ribs ball tip. Kielbasa doner leberkas
-                spare ribs ball tip sirloin flank tongue, brisket
-                burgdoggen. Ham pork chop strip steak shoulder brisket
-                cow bacon.
+                {project?.summary}
               </p>
             </div>
           </div>

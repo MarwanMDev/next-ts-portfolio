@@ -20,6 +20,7 @@ import { fetchExperiences } from '../utils/fetchExperiences';
 import { fetchProjects } from '../utils/fetchProjects';
 import { fetchSocials } from '../utils/fetchSocials';
 import { fetchSkills } from '../utils/fetchSkills';
+import { urlFor } from '../sanity';
 
 type Props = {
   pageInfo: PageInfo;
@@ -39,28 +40,28 @@ export default function Home({
   return (
     <div className="bg-[#212121] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#FF0266]/80">
       <Head>
-        <title>Marwan Mostafa | Portfolio</title>
+        <title>{pageInfo?.name} | Portfolio</title>
       </Head>
       <Header socials={socials} />
 
       <section id="hero" className="snap-start">
-        <Hero />
+        <Hero pageInfo={pageInfo} />
       </section>
 
       <section id="about" className="snap-center">
-        <About />
+        <About pageInfo={pageInfo} />
       </section>
 
       <section id="experience" className="snap-center">
-        <WorkExperience />
+        <WorkExperience experiences={experiences} />
       </section>
 
       <section id="skills" className="snap-start">
-        <Skills />
+        <Skills skills={skills} />
       </section>
 
       <section id="projects" className="snap-start">
-        <Projects />
+        <Projects projects={projects} />
       </section>
 
       <section id="contact" className="snap-start">
@@ -69,11 +70,11 @@ export default function Home({
 
       <footer className="sticky bottom-5 w-full cursor-pointer">
         <div className="flex items-center justify-center">
-          {/* <img
-            src="marwan.png"
+          <img
+            src={urlFor(pageInfo?.heroImage).url()}
             alt="profile"
             className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
-          /> */}
+          />
         </div>
       </footer>
     </div>
