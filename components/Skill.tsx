@@ -7,7 +7,7 @@ type Props = { directionLeft?: boolean; skill: Skill };
 
 const Skill = ({ directionLeft, skill }: Props) => {
   return (
-    <div className="group relative flex cursor-pointer">
+    <div className="group relative flex cursor-pointer shadow-md">
       <motion.img
         initial={{ x: directionLeft ? -200 : 200, opacity: 0 }}
         whileInView={{
