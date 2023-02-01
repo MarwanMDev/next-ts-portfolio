@@ -51,4 +51,11 @@ export default defineType({
       of: [{type: 'string'}],
     }),
   ],
+  orderings: [
+    {
+      title: 'Date Started',
+      name: 'dateStarted',
+      by: [{field: 'dateStarted', direction: 'asc'}],
+    },
+  ],
 })

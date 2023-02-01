@@ -44,37 +44,17 @@ function About({ pageInfo }: Props) {
           </span>{' '}
           background
         </h4>
-        <p className="text-base">
-          Bacon ipsum dolor amet jerky bacon ball tip turkey doner
-          sirloin landjaeger meatloaf turducken pork meatball ham
-          cupim. Hamburger jowl shankle capicola cow andouille picanha
-          filet mignon burgdoggen ham buffalo meatball. Burgdoggen
-          short ribs tail short loin, jerky ham tenderloin landjaeger
-          pork loin pork belly doner. Swine tongue chuck, sausage
-          turducken cow chislic buffalo picanha hamburger tail strip
-          steak.
+        <p className="text-base text-justify">
+          Hello! {`I'm`} Marwan, and {`I've`} been the Manager of
+          Ancillary Revenue in EGYPTAIR for the past 16 months. Ever
+          since I received my degree in computer science, {`I've`}{' '}
+          been really interested in web development.
         </p>
+        {''}
         <p>
-          {' '}
-          Bacon ipsum dolor amet jerky bacon ball tip turkey doner
-          sirloin landjaeger meatloaf turducken pork meatball ham
-          cupim. Hamburger jowl shankle capicola cow andouille picanha
-          filet mignon burgdoggen ham buffalo meatball. Burgdoggen
-          short ribs tail short loin, jerky ham tenderloin landjaeger
-          pork loin pork belly doner. Swine tongue chuck, sausage
-          turducken cow chislic buffalo picanha hamburger tail strip
-          steak.
-        </p>
-        <p>
-          {' '}
-          Bacon ipsum dolor amet jerky bacon ball tip turkey doner
-          sirloin landjaeger meatloaf turducken pork meatball ham
-          cupim. Hamburger jowl shankle capicola cow andouille picanha
-          filet mignon burgdoggen ham buffalo meatball. Burgdoggen
-          short ribs tail short loin, jerky ham tenderloin landjaeger
-          pork loin pork belly doner. Swine tongue chuck, sausage
-          turducken cow chislic buffalo picanha hamburger tail strip
-          steak.
+          {`I'm`} thrilled to utilize my web development passion and
+          past professional experience to continue creating unique
+          products for the travel industry.
         </p>
       </div>
     </motion.div>

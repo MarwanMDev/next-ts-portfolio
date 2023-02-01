@@ -54,7 +54,9 @@ function ExperienceCard({ experience }: Props) {
         </p>
         <ul className="list-disc space-y-4 ml-5 text-lg h-96 overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#FF0266]/80 pr-5">
           {experience?.points.map((point, i) => (
-            <li key={i}>{point}</li>
+            <li key={i} className="text-justify">
+              {point}
+            </li>
           ))}
         </ul>
       </div>
