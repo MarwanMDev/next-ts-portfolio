@@ -22,7 +22,7 @@ const ContactMe = (props: Props) => {
 
   return (
     <div className="relative h-screen flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl shadow-sm">
         Contact Me
       </h3>
 
@@ -30,7 +30,7 @@ const ContactMe = (props: Props) => {
         <h4 className="text-4xl font-semibold text-center">
           I have got just what you need.{' '}
           <span className="underline decoration-[#FF0266]/50">
-            Lets Talk
+            {`Let's`} Talk
           </span>
         </h4>
 
