@@ -31,6 +31,7 @@ const Hero = ({ pageInfo }: Props) => {
         alt="Picture of the author"
         height={32}
         width={32}
+        priority={true}
       />
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
