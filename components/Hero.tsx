@@ -3,7 +3,6 @@ import React from 'react';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import BackgroundCircles from './BackgroundCircles';
 import Image from 'next/image';
-import profileImage from '../public/marwan.png';
 import { PageInfo } from '../typings';
 import { urlFor } from '../sanity';
 
@@ -12,11 +11,11 @@ type Props = {
 };
 
 const Hero = ({ pageInfo }: Props) => {
-  const [text, helper] = useTypewriter({
+  const [text] = useTypewriter({
     words: [
       `This is ${pageInfo?.name}`,
       'Guy-who-loves-coffe.tsx',
-      '<MDevLovesToCodeMore />',
+      '<LovesToCodeMore />',
     ],
     loop: true,
     delaySpeed: 2000,
