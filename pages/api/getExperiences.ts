@@ -7,7 +7,7 @@ const query = groq`
   *[_type == 'experience'] {
     ...,
     technologies[] ->
-  }
+  } | order(isCurrentlyWorking asc) | order(dateEnded desc)
 `;
 
 type Data = {
